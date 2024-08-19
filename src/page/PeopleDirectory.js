@@ -68,7 +68,7 @@ const PeopleDirectory = () => {
                 ? 'bg-[#E9D7FE] text-[#6941C6]'
                 : team === 'Marketing'
                   ? 'bg-[#B2DDFF] text-[#175CD3]'
-                  : 'bg-purple-500'; // Developer
+                  : 'bg-purple-500';
               return (
                 <span key={index} className={`text-white px-2 py-1 rounded-full ${bgColor}`}>
                   {team}
@@ -207,7 +207,7 @@ const PeopleDirectory = () => {
             <FiFilter className="" />
           </div>
           <button
-            onClick={() => setAddMemberVisible(true)} // Open the add member form
+            onClick={() => setAddMemberVisible(true)} 
             className="bg-[#6941C6] text-white px-4 py-2 rounded-md"
           >
             + Add Member
@@ -310,7 +310,7 @@ const PeopleDirectory = () => {
       {isAddMemberVisible && (
         <AddMemberForm
           onClose={() => setAddMemberVisible(false)}
-          onSave={handleAdd} // Pass handleAdd to AddMemberForm
+          onSave={handleAdd} 
         />
       )}
 
